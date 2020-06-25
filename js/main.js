@@ -8,7 +8,7 @@ $(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 4000,
         arrows: false,
         fade: true
       });
@@ -46,6 +46,11 @@ $(function () {
         });
 
     $('.btn-summary-details').magnificPopup({
+        type: 'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    });
+
+    $('.btn-contacts').magnificPopup({
         type: 'inline',
         midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
     });

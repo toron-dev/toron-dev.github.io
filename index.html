@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Portfolio</title>
+  <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sriracha&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
@@ -22,7 +22,6 @@
             <img src="images/logo.png" alt="logo">
           </div>
           <nav class="menu" id="menu">
-            <a href="#menu">Головна</a>
             <a href="#skills">Технології</a>
             <a href="#portfolio">Мої роботи</a>
             <a href="#footer">Контакти</a>
@@ -38,14 +37,17 @@
             Вітаю Вас на моїй сторінці-потфоліо
           </div>
           <div class="header__text">
-            Мене звати Євгеній,</br> я Junior front-end розробник
+            Мене звати Євгеній, <span>я Junior front-end розробник</span>
           </div>
         </div>
+
+        <div id="skills"></div>
+        
       </div>
     </div>
   </header>
 
-  <section class="skills" id="skills">
+  <section class="skills">
     <div class="wrapper__bg-wbw white-line-img parallax-wrapper-2">
 
       <div class="summary">
@@ -95,20 +97,20 @@
         </div>
         <div class="skills__inner">
           <div class="skills__item">Html/Css
-            <div class="slills__line">
-              <div class="slills__line-htmlcss wow"></div>
+            <div class="skills__line">
+              <div class="skills__line-htmlcss wow"></div>
             </div>
           </div>
 
           <div class="skills__item">Sass/Gulp
-            <div class="slills__line">
-              <div class="slills__line-sassgulp wow"></div>
+            <div class="skills__line">
+              <div class="skills__line-sassgulp wow"></div>
             </div>
           </div>
 
           <div class="skills__item">JS/JQuery
-            <div class="slills__line">
-              <div class="slills__line-jsjq wow"></div>
+            <div class="skills__line">
+              <div class="skills__line-jsjq wow"></div>
             </div>
           </div>
 
@@ -117,10 +119,11 @@
     </div>
   </section>
 
-  <section class="portfolio" id="portfolio">
+  <section class="portfolio">
     <div class="wrapper__bg-b wrapper-portfolio">
       <div class="container">
-        <div class="portfolio__title">Мої роботи</div>
+        <div id="portfolio"></div>
+        <div class="portfolio__title">Приклади моїх робіт</div>
         <div class="portfolio__inner">
 
           <div class="portfolio__item">
@@ -152,16 +155,27 @@
         <div class="links__inner">
           <div class="wrap__link-social">
             <a class="link-instagram link-social" href="https://www.instagram.com/?hl=ru"
-              style="background-image: url(images/icon-instagram.jpg);"></a>
+              style="background-image: url(images/icon-instagram.png);"><span></span></a>
             <a class="link-telegram link-social" href="https://teleg.run/Toron_dev"
-              style="background-image: url(images/icon-telegram.jpg);"></a>
+              style="background-image: url(images/icon-telegram.png);"><span></span></a>
             <a class="link-facebook link-social" href="https://www.facebook.com/profile.php?id=100010651503317"
-              style="background-image: url(images/icon-facebook.jpg);"></a>
+              style="background-image: url(images/icon-facebook.png);"><span></span></a>
           </div>
           <div class="wrap__link-pm">
             <a class="link-phone" href="tel:+380638878469">+38(063) 887 84 69</a>
             <a class="link-mail" href="mailto:toron.dev@gmail.com">toron.dev@gmail.com</a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="header__contacts" class="popup-header__contacts mfp-hide">
+    <div class="header__contacts__wrapper">
+      <div class="container">
+        <div class="wrap__link-pm">
+          <a class="link-phone" href="tel:+380638878469">+38(063) 887 84 69</a>
+          <a class="link-mail" href="mailto:toron.dev@gmail.com">toron.dev@gmail.com</a>
         </div>
       </div>
     </div>
