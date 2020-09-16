@@ -2,6 +2,7 @@ $(function () {
 
     $('.btn-menu').on('click', function(){
         $('.menu').slideToggle();
+        $('.btn-menu').toggleClass('active');
       });
 
     $('.tec__inner').slick({
