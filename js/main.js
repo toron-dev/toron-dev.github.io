@@ -24,6 +24,31 @@ $(function () {
     $('.hover-text').append('<span>' + v + '</span>');
   })
 
+  //animate jump text
+  let myTextArr = document.querySelectorAll(".hover-text span");
+  let textCounter = 0;
+  let textWait = 0;
+
+  function textJumpAnimation() {
+    myTextArr.forEach(element => {
+      element.classList.remove("active");
+    });
+    if (textWait > 100) {
+      myTextArr[textCounter].classList.add("active");
+      textCounter++
+    }
+    if (textCounter >= myTextArr.length) {
+      textWait = 0;
+      textCounter = 0;
+    }
+    textWait++;
+  }
+  setInterval(textJumpAnimation, 100);
+
+
+
+
+
 
   // if (screen.width < 480) {
   //   // do any 480 width stuff here, or simply do nothing
