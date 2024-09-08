@@ -28,19 +28,19 @@ $(function () {
 
 
   //animate jump text
-  let myTextArr = document.querySelectorAll(".hover-text span");
+  let textArr = document.querySelectorAll(".hover-text span");
   let textCounter = 0;
   let textWait = 0;
 
   function textJumpAnimation() {
-    myTextArr.forEach(element => {
+    textArr.forEach(element => {
       element.classList.remove("active");
     });
     if (textWait > 100) {
-      myTextArr[textCounter].classList.add("active");
+      textArr[textCounter].classList.add("active");
       textCounter++
     }
-    if (textCounter >= myTextArr.length) {
+    if (textCounter >= textArr.length) {
       textWait = 0;
       textCounter = 0;
     }
