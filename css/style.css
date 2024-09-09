@@ -119,7 +119,7 @@ p {
     border-top: var(--thickness) solid var(--third-color);
     -webkit-animation-name: third;
     animation-name: third;
-
+}
 @-webkit-keyframes first {
     0% {
         -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
