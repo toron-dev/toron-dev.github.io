@@ -18,13 +18,13 @@ $(function () {
 
 
   // text-hover-effect
-  var text = $('.hover-text').text(),
-    textArr = text.split('');
-  $('.hover-text').html('');
-  $.each(textArr, function (i, v) {
-    if (v == ' ') { $('.hover-text').append('<span class="space"></span>'); }
-    $('.hover-text').append('<span>' + v + '</span>');
-  })
+  // var text = $('.hover-text').text(),
+  //   textArr = text.split('');
+  // $('.hover-text').html('');
+  // $.each(textArr, function (i, v) {
+  //   if (v == ' ') { $('.hover-text').append('<span class="space"></span>'); }
+  //   $('.hover-text').append('<span>' + v + '</span>');
+  // })
 
 
   //animate jump text
